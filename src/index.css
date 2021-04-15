@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "radnika_next";
+    src: url("./Assets/radnikanext-medium-webfont.woff2");
+    format: ("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    font-family: "radnika_next";
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 0 rgb(0 0 0 / 10%);
+  }
 }
