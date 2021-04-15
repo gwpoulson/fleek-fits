@@ -1,6 +1,6 @@
 # Fleek Fits
 
-Fleek fits is an e-commerce website.
+Fleek fits is an e-commerce website. The website is live at https://zen-ritchie-53a565.netlify.app
 
 ## Tech Stack
 
